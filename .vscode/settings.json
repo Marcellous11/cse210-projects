@@ -1,0 +1,9 @@
+{
+    "editor.inlineSuggest.enabled": false,
+
+    "python.analysis.aiCodeActions": {
+        "implementAbstractClasses": true,
+        "generateSymbol": true,
+        "convertFormatString": true
+    }
+}
