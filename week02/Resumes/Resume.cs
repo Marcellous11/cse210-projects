@@ -1,5 +1,4 @@
 namespace Resumes;
-
 class Resume
 {
     public string _name;

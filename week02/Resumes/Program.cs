@@ -1,5 +1,5 @@
-using System;
 namespace Resumes;
+
 class Program
 {
     static void Main(string[] args)
