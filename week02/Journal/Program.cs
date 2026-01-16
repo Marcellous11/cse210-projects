@@ -1,6 +1,4 @@
-using System;
-using System.Security.Cryptography.X509Certificates;
-
+// For full 100% I am reading data from a JSON file
 class Program
 {
     static void Main(string[] args)
