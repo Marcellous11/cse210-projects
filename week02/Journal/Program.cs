@@ -1,5 +1,5 @@
 // For full 100% I am reading data from a JSON file
-namespace JournalApp;
+namespace Journal;
 class Program
 {
     static void Main(string[] args)

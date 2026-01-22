@@ -1,5 +1,5 @@
 using System.Text.Json;
-namespace JournalApp;
+namespace Journal;
 class JournalProcessing
 {
     

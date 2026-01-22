@@ -1,4 +1,4 @@
-namespace JournalApp;
+namespace Journal;
 
 class CLITool
 {
