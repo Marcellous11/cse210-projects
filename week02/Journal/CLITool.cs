@@ -57,7 +57,11 @@ class CLITool
 
         Console.WriteLine(r_prompt);
         _journalEntry = Console.ReadLine();
-        JournalProcessing.AddJournalEntry(_journalEntry,r_prompt);
+        JournalEntry journalEntry = new JournalEntry();
+        journalEntry._date =  DateTime.Today.ToString("MM/dd/yyyy");
+        journalEntry._prompt = r_prompt;
+        journalEntry._entry = _journalEntry;
+        JournalProcessing.AddJournalEntry(journalEntry);
     }
 
     public void DisplayJournalEntry()
@@ -87,7 +91,7 @@ class CLITool
     public void SaveJournalEntries()
     {
         string fileName;
-        Console.Write("\nPlease enter the file name to save to: ");
+        Console.Write("\nPlease enter the file name to save to (make use it ends with .json): ");
         fileName = Console.ReadLine();
         JournalProcessing.SaveJournalEntries(fileName);
     }

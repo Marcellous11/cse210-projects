@@ -2,20 +2,18 @@ using System.Text.Json;
 namespace JournalApp;
 class JournalProcessing
 {
-    public string _date;
-    public string _entry;
-    public string _prompt;
+    
     public List<Dictionary<string,string>> _currnetJournalEntries = new List<Dictionary<string, string>>(); 
 
-    public void AddJournalEntry(string journalText,string prompt)
+    public void AddJournalEntry(JournalEntry journalEntry)
     {
-        Dictionary<string,string> journalEntry = new Dictionary<string, string>
+        Dictionary<string,string> journalData = new Dictionary<string, string>
         {
-            { "date", DateTime.Today.ToString("MM/dd/yyyy") },
-            { "prompt", prompt },
-            { "entry", journalText }
+            { "date", journalEntry._date },
+            { "prompt", journalEntry._prompt },
+            { "entry", journalEntry._entry }
         };
-        _currnetJournalEntries.Add(journalEntry);
+        _currnetJournalEntries.Add(journalData);
     }
 
     public void LoadJournalEntries(string path)
