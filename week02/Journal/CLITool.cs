@@ -1,19 +1,12 @@
 namespace Journal;
 
-class CLITool
+class CLITool(JournalProcessing JournalProcessing)
 {
 
     public int _userOption;
     public string _journalEntry;
     Random _randomGen = new Random();
-    JournalProcessing JournalProcessing;
-
-    public CLITool(JournalProcessing JournalProcessing)
-    {
-        this.JournalProcessing = JournalProcessing;
-    }
-
-   
+    JournalProcessing JournalProcessing = JournalProcessing;
     public List<string> _promptOptions = new List<string>{"What was the bet part of your day?","What is something you'd like to do better tomorrow?","What Christ like Attribute did you see other display today?","What are you doing this week to accomplish your dream?","Tell me your favorite memory with your mom."};
 
     public int DisplayMenu()
