@@ -1,11 +1,12 @@
 // For full 100% I am reading data from a JSON file
+namespace JournalApp;
 class Program
 {
     static void Main(string[] args)
     {
         int userResponse = -1;
-        Journal journal = new Journal();
-        CLITool cli = new CLITool(journal);
+        JournalProcessing JournalProcessing = new JournalProcessing();
+        CLITool cli = new CLITool(JournalProcessing);
 
         while(userResponse != 5)
         {   

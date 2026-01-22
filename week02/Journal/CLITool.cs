@@ -1,14 +1,16 @@
+namespace JournalApp;
+
 class CLITool
 {
 
     public int _userOption;
     public string _journalEntry;
     Random _randomGen = new Random();
-    Journal journal;
+    JournalProcessing JournalProcessing;
 
-    public CLITool(Journal journal)
+    public CLITool(JournalProcessing JournalProcessing)
     {
-        this.journal = journal;
+        this.JournalProcessing = JournalProcessing;
     }
 
    
@@ -55,25 +57,23 @@ class CLITool
 
         Console.WriteLine(r_prompt);
         _journalEntry = Console.ReadLine();
-        journal.AddJournalEntry(_journalEntry,r_prompt);
-
+        JournalProcessing.AddJournalEntry(_journalEntry,r_prompt);
     }
 
     public void DisplayJournalEntry()
     {
-        if(journal._currnetJournalEntries.Count == 0)
+        if(JournalProcessing._currnetJournalEntries.Count == 0)
         {
             Console.WriteLine("\nThere are currently no journal entries found.\n");
         }
         else
         {
-            journal._currnetJournalEntries.ForEach(entry =>{
+            JournalProcessing._currnetJournalEntries.ForEach(entry =>{
                 Console.WriteLine($"\nDate: {entry["date"]}");
                 Console.WriteLine($"Prompt: {entry["prompt"]}");
                 Console.WriteLine($"Entry: \n{entry["entry"]}\n");
         });
         }
-
     }
 
     public void LoadJournalData()
@@ -81,7 +81,7 @@ class CLITool
         string fileName;
         Console.Write("\nPlease enter the file name to load from: ");
         fileName = Console.ReadLine();
-        journal.LoadJournalEntries(fileName);
+        JournalProcessing.LoadJournalEntries(fileName);
     }
 
     public void SaveJournalEntries()
@@ -89,8 +89,6 @@ class CLITool
         string fileName;
         Console.Write("\nPlease enter the file name to save to: ");
         fileName = Console.ReadLine();
-        journal.SaveJournalEntries(fileName);
+        JournalProcessing.SaveJournalEntries(fileName);
     }
-
-
 }

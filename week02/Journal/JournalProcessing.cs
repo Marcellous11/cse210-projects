@@ -1,6 +1,6 @@
 using System.Text.Json;
-
-class Journal
+namespace JournalApp;
+class JournalProcessing
 {
     public string _date;
     public string _entry;
