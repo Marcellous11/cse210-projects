@@ -14,14 +14,14 @@ class Program
         Order order1 = new Order(jamesBond,new List<Product>(){shoes,shirt,jacket});
 
 
-        Address OJAddress = new Address("3422 Guilty Ave","Nowhere","Darkness","China" );
-        Customer OJ = new Customer("OJ",OJAddress);
+        Address OJAddress = new Address("3422 Baguette Ave","Paris","","France" );
+        Customer napoleon = new Customer("Napoleon",OJAddress);
 
         Product gloves = new Product("Small Black Gloves",12.99,1);
         Product whiteShirt = new Product("Banana Republic Shirt",36.99,2);
-        Product car = new Product("Black Getaway Car",70000,1);
+        Product car = new Product("Smart Car",35389,1);
 
-        Order order2 = new Order(OJ,new List<Product>(){gloves,whiteShirt,car});
+        Order order2 = new Order(napoleon,new List<Product>(){gloves,whiteShirt,car});
 
         new List<Order>(){order1,order2}.ForEach(order=>{
 
