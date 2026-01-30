@@ -12,7 +12,6 @@ class Address{
         _country = country;
     }
     public bool IsUSA(){
-
         return _country.Trim().ToUpper() == "USA";
     }
 

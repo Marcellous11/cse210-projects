@@ -1,13 +1,12 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace OnlineOrdering;
 class Product{
     private string _name;
     private int _productId;
-    private double _price ;
+
+    private decimal _price ;
     private int _quantity;
 
-    public Product(string name,double price,int quantity){
+    public Product(string name,decimal price,int quantity){
         _name = name;
         _price = price;
         _quantity = quantity;
