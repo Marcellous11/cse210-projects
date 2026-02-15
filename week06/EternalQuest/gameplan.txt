@@ -1,0 +1,47 @@
+
+**** GOAL TRACKER ****
+
+A. Simple Goal
+B. External Goals
+C. Checklist Goals 
+
+Select a goal (using letter): 
+
+-------------------------------------
+
+Simple Goal
+    1 Run marathon (1000)
+    2 To to europe (1000)
+
+A. Add a Simple Goal
+B. Remove Goal
+C. Return to main menu
+
+Select option using letter or number for tasked completed:
+
+-------------------------------------
+
+2 External Goals
+    ◉ Read Scriptures (100)
+    ◉ To go temple (100)
+    ◉ To morning prayers (100)
+
+A. A task was comleted 
+B. Add a Simple Goal
+C. Remove Goal
+D. Return to main menu
+
+Select a goal (using letter):
+
+-------------------------------------
+
+3 Checklist Goals 
+    1 Walk Dog (50)
+    2 Cut Dog Hair (50)
+    3 Fill dog water jug (50)
+    - 500 bonus if all are completed - 
+ 
+A. Add a Simple Goal
+B. Return to main menu
+
+Select option using letter or number for tasked completed:
