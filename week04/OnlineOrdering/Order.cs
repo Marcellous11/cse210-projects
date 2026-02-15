@@ -14,13 +14,13 @@ class Order{
         _products = products;
     }
 
-    public double GetTotalCost(){
+    public decimal GetTotalCost(){
         if(_customer.IsInUSA()){
             SHIPPING_COST = 5;
         }{
             SHIPPING_COST = 35;
         }
-        return double.Round(_products.Sum(e=>e.GetPrice()),2) + SHIPPING_COST;
+        return decimal.Round(_products.Sum(product=>product.GetPrice()),2) + SHIPPING_COST;
     }
 
     public string GetPackingLabel(){

@@ -10,10 +10,9 @@ class Product{
         _name = name;
         _price = price;
         _quantity = quantity;
-        
     }
-    public double GetPrice(){
-        return (double)(_price * _quantity);
+    public decimal GetPrice(){
+        return (decimal)(_price * _quantity);
     }
     public int GetProductID(){
         return _productId;
