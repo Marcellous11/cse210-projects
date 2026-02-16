@@ -25,7 +25,7 @@ abstract class Activity{
 
     public abstract string GetSummary();
 
-    public string GetDate(){
+    protected string GetDate(){
         string format = "dd MMM yyyy";
         string inputformat = "MM/dd/yyyy";
         
