@@ -12,13 +12,6 @@ class Running:Activity{
         return _miles;
     }
 
-    public override double GetSpeed(){
-        return (_miles/_mins) * 60;
-    }
-    public override double GetPace(){
-        return _mins/ _miles;
-    }
-
     public override string GetSummary(){
         return $"{GetDate()} ({_mins} min)- Distance {GetDistance()} miles, Speed {GetSpeed()} mph, Pace: {GetPace()} min per mile";
     }

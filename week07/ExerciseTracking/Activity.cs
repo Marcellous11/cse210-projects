@@ -14,8 +14,14 @@ abstract class Activity{
 
     public abstract double GetDistance();
 
-    public abstract double GetSpeed();
-    public abstract double GetPace();
+     public double GetSpeed()
+    {
+        return Math.Round(GetDistance() / _mins * 60, 2);
+    }
+    public double GetPace()
+    {
+        return Math.Round(_mins / GetDistance(), 2);
+    }
 
     public abstract string GetSummary();
 

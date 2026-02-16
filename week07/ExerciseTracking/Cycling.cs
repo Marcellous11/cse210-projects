@@ -15,15 +15,6 @@ class Cycling : Activity
         return _miles ;
     }
 
-    public override double GetSpeed()
-    {
-        return Math.Round(GetDistance() / _mins * 60, 2);
-    }
-    public override double GetPace()
-    {
-        return Math.Round(_mins / GetDistance(), 2);
-    }
-
     public override string GetSummary()
     {
         return $"{GetDate()} ({_mins} min)- Distance {GetDistance()} miles, Speed {GetSpeed()} mph, Pace: {GetPace()} min per mile";
